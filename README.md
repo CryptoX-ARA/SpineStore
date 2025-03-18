@@ -1,13 +1,10 @@
-<div style="display: grid; grid-template-columns: 200px 1fr; align-items: center; gap: 20px;">
-  <div>
-    <img src="img/logo.png" alt="HedgeHoard Logo" width="100%" />
-  </div>
-  <div>
-    <h1>SpineStore</h1>
 
-  </div>
-</div>
-<p>SpineStore nace de la necesidad de utilizar normativas como ISO 27000 o ENS en software especializado. Obtener los catálogos de las normas es generalmente muy tedioso, por lo tanto decidimos liberar estas certificaciones en formato JSON para así poder ser utilizadas para ser procesadas por software o bien para introducirlas cómodamente en un asistente de IA.</p>
+
+# SpineStore
+
+<img src="img/logo_wide.png" alt="HedgeHoard Logo" width="100%" />
+
+SpineStore nace de la necesidad de utilizar normativas como ISO 27000 o ENS en software especializado. Obtener los catálogos de las normas es generalmente muy tedioso, por lo tanto decidimos liberar estas certificaciones en formato JSON para así poder ser utilizadas para ser procesadas por software o bien para introducirlas cómodamente en un asistente de IA.
 
 ## 📋 Descripción General
 
