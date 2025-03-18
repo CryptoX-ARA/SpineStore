@@ -20,15 +20,25 @@ SpineStore es una colección de normativas para la gestión del riesgo en format
 ## 📂 Estructura del Repositorio
 
 ├── certs/                    # Directorio principal para las normativas
+
 │   └── ENS/            # Normativa ENS
+
 │       └── alto/
+
 │            └── medidas.json
+
 │       └── medio/
+
 │            └── medidas.json
+
 │       └── bajo/
-│            └── medidas.json        
+
+│            └── medidas.json   
+     
 ├── docs/                     # Documentación y ejemplos de uso
+
 ├── img/                      # Imágenes incluyendo el logo
+
 └── README.md                 # Este archivo
 
 ## 🛠️ Uso
