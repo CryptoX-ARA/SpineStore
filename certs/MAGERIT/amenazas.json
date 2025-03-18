@@ -1,0 +1,78 @@
+{
+    "[E]": {
+        "name": "Errores y fallos no intencionados",
+        "threats": {
+            "[E.0]": "Desastres industriales",
+            "[E.1]": "Errores de los usuarios",
+            "[E.2]": "Errores del administrador",
+            "[E.3]": "Errores de monitorización (log)",
+            "[E.4]": "Errores de configuración",
+            "[E.7]": "Deficiencias en la organización",
+            "[E.8]": "Difusión de software dañino",
+            "[E.9]": "Errores de re-enc aminamiento",
+            "[E.10]": "Errores de secuencia",
+            "[E.15]": "Alteración accidental de la información",
+            "[E.18]": "Destrucción de información",
+            "[E.19]": "Fugas de información",
+            "[E.20]": "Vulnerabilidades de los programas (software)",
+            "[E.21]": "Errores de mantenimiento o actualización de programa",
+            "[E.23]": "Errores de mantenimiento o actualización de equipo",
+            "[E.24]": "Caída del sistema por agotamiento de recursos",
+            "[E.25]": "Pérdida de equipos",
+            "[E.28]": "Indisponibilidad del personal"
+        }
+    },
+    "[N]": {
+        "name": "Desastres naturales",
+        "threats": {
+            "[N.0]": "Desastres naturales",
+            "[N.1]": "Fuego",
+            "[N.2]": "Daños por agua"
+        }
+    },
+    "[I]": {
+        "name": "De origen industrial",
+        "threats": {
+            "[I.1]": "Fuego",
+            "[I.2]": "Daños por agua",
+            "[I.3]": "Contaminación mecánica",
+            "[I.4]": "Contaminación electromagnética",
+            "[I.5]": "Avería de origen físico o lógico",
+            "[I.6]": "Corte del suministro eléctrico",
+            "[I.7]": "Condiciones inadecuadas de temperatura o humedad.",
+            "[I.8]": "Fallo de servicio de comunicaciones",
+            "[I.9]": "Interrupción de otros servicios y suministros esenciales",
+            "[I.10]": "Degradación de los soportes de almacenamiento",
+            "[I.11]": "Emanaciones electromagnéticas"
+        }
+    },
+    "[A]": {
+        "name": "Ataques intencionados",
+        "threats": {
+            "[A.3]": "Manipulación de los registros de actividad (log)",
+            "[A.4]": "Manipulación de la configuración",
+            "[A.5]": "Suplantación de la identidad del usuario",
+            "[A.6]": "Abuso de privilegios de acceso",
+            "[A.7]": "Uso no previsto",
+            "[A.8]": "Difusión de software dañino",
+            "[A.9]": "Re-encaminamiento de mensajes",
+            "[A.10]": "Alteración de secuencia",
+            "[A.11]": "Acceso no autorizado",
+            "[A.12]": "Análisis de tráfico",
+            "[A.13]": "Repudio",
+            "[A.14]": "Interceptación de información (escucha)",
+            "[A.15]": "Modificación deliberada de la información",
+            "[A.18]": "Destrucción de información",
+            "[A.19]": "Divulgación de información",
+            "[A.22]": "Manipulación de programas",
+            "[A.23]": "Manipulación de los equipos",
+            "[A.24]": "Denegación de servicio",
+            "[A.25]": "Robo",
+            "[A.26]": "Ataque destructivo",
+            "[A.27]": "Ocupación enemiga",
+            "[A.28]": "Indisponibilidad del personal",
+            "[A.29]": "Extorsión",
+            "[A.30]": "Ingeniería social (picaresca)"
+        }
+    }
+}

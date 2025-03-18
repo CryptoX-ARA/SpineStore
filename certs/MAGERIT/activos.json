@@ -1,0 +1,226 @@
+{
+    "[AUX]": {
+        "name": "Equipamiento auxiliar",
+        "types": {
+            "[AUX.ac]": "Equipos de climatización",
+            "[AUX.cabling]": "Cableado",
+            "[AUX.cabling.fiber]": "Cableado de fibra óptica",
+            "[AUX.cabling.wire]": "Cableado de cable eléctrico",
+            "[AUX.destroy]": "Equipos de destrucción de soportes de información",
+            "[AUX.furniture]": "Mobiliario",
+            "[AUX.gen]": "Generadores eléctricos",
+            "[AUX.power]": "Fuentes de alimentación",
+            "[AUX.robot.disk]": "Robots de discos",
+            "[AUX.robot.tape]": "Robots de cinta",
+            "[AUX.safe]": "Cajas fuertes",
+            "[AUX.supply]": "Suministros esenciales",
+            "[AUX.ups]": "Sistemas de alimentación ininterrumpida"
+        }
+    },
+    "[D]": {
+        "name": "Datos - Información",
+        "types": {
+            "[D.acl]": "Datos de control de acceso",
+            "[D.auth]": "Datos de validación de credenciales",
+            "[D.backup]": "Copias de respaldo",
+            "[D.conf]": "Datos de configuración",
+            "[D.exe]": "Código ejecutable",
+            "[D.files]": "Ficheros",
+            "[D.int]": "Datos de gestión interna",
+            "[D.log]": "Registro de actividad (log)",
+            "[D.password]": "Credenciales (contraseñas)",
+            "[D.source]": "Código fuente",
+            "[D.test]": "Datos de prueba"
+        }
+    },
+    "[SW.sub]": {
+        "name": "Software desarrollo a medida (subcontratado)",
+        "types": {
+            "[SW.sub.adhoc]": "Desarrollo a medida (subcontratado)"
+        }
+    },
+    "[essential.info]": {
+        "name": "Activos esenciales: información",
+        "types": {
+            "[essential.info.adm]": "Datos de interés para la administración pública",
+            "[essential.info.classified.C]": "Datos clasificados confidenciales",
+            "[essential.info.classified.R]": "Datos clasificados de difusión limitada",
+            "[essential.info.per.A]": "Datos de carácter personal nivel alto",
+            "[essential.info.per.B]": "Datos de carácter personal nivel bajo",
+            "[essential.info.per.M]": "Datos de carácter personal nivel medio",
+            "[essential.info.pub]": "Datos clasificados públicos",
+            "[essential.info.UC]": "Datos sin clasificar",
+            "[essential.info.vr]": "Datos vitales (registros de la organización)"
+        }
+    },
+    "[P]": {
+        "name": "Personal",
+        "types": {
+            "[P.adm]": "Administradores de sistemas",
+            "[P.com]": "Administrador de comunicaciones",
+            "[P.dba]": "Administrador de BBDD",
+            "[P.des]": "Desarrolladores / Programadores",
+            "[P.op]": "Operadores",
+            "[P.prov]": "Proveedores",
+            "[P.sec]": "Administrador de seguridad",
+            "[P.sub]": "Subcontratas",
+            "[P.ue]": "Usuarios externos",
+            "[P.ui]": "Usuarios internos"
+        }
+    },
+    "[COM]": {
+        "name": "Redes de comunicacion",
+        "types": {
+            "[COM.ADSL]": "ADSL",
+            "[COM.Internet]": "Internet",
+            "[COM.LAN]": "Red local",
+            "[COM.MAN]": "Red metropolitana",
+            "[COM.mobile]": "Telefonía móvil",
+            "[COM.pp]": "Punto a punto",
+            "[COM.PSTN]": "Red telefónica",
+            "[COM.radio]": "Comunicaciones radio",
+            "[COM.sat]": "Red por satélite",
+            "[COM.wifi]": "Red inalámbrica"
+        }
+    },
+    "[SW.std]": {
+        "name": "Software estándar",
+        "types": {
+            "[SW.std.app]": "Servidor de aplicaciones",
+            "[SW.std.av]": "Antivirus",
+            "[SW.std.backup]": "Sistema de backup",
+            "[SW.std.browser]": "Navegador",
+            "[SW.std.dbms]": "Sistema de gestión de bases de datos",
+            "[SW.std.email_client]": "Cliente de correo electrónico",
+            "[SW.std.email_server]": "Servidor de correo electrónico",
+            "[SW.std.file]": "Servidor de ficheros",
+            "[SW.std.hypervisor]": "Gestor de máquinas virtuales",
+            "[SW.std.office]": "Ofimática",
+            "[SW.std.os]": "Sistema operativo",
+            "[SW.std.tm]": "Monitor transaccional",
+            "[SW.std.ts]": "Servidor de terminales",
+            "[SW.std.www]": "Servidor de presentación"
+        }
+    },
+    "[keys.com]": {
+        "name": "Claves criptograficas: protección de las comunicaciones",
+        "types": {
+            "[keys.com.authentication]": "Claves de autenticación",
+            "[keys.com.channel]": "Claves de cifrado del canal",
+            "[keys.com.verification]": "Claves de verificación de autenticación"
+        }
+    },
+    "[HW]": {
+        "name": "Hardware",
+        "types": {
+            "[HW.backup]": "Equipamiento de respaldo",
+            "[HW.bp]": "Dispositivo de frontera",
+            "[HW.host]": "Grandes equipos o servidores",
+            "[HW.ipphone]": "Teléfono IP",
+            "[HW.mid]": "Equipos medios",
+            "[HW.mobile]": "Informática móvil",
+            "[HW.pabx]": "Centralita telefónica",
+            "[HW.pc]": "Informática personal o pcs",
+            "[HW.pda]": "Agendas electrónicas",
+            "[HW.vhost]": "Equipo virtual"
+        }
+    },
+    "[L ]": {
+        "name": "Instalaciones",
+        "types": {
+            "[L .backup]": "Instalaciones de respaldo",
+            "[L .building]": "Edificio",
+            "[L .channel]": "Canalización",
+            "[L .local]": "Cuarto",
+            "[L .mobile.car]": "Vehículo terrestre",
+            "[L .mobile.plane]": "Vehículo aéreo",
+            "[L .mobile.shelter]": "Contenedores",
+            "[L .mobile.ship]": "Vehículo marítimo",
+            "[L .site]": "Recinto"
+        }
+    },
+    "[HW.network]": {
+        "name": "Hardware: soporte de la red",
+        "types": {
+            "[HW.network.bridge]": "Pasarelas",
+            "[HW.network.firewall]": "Cortafuegos",
+            "[HW.network.hub]": "Concentradores",
+            "[HW.network.modem]": "Modem",
+            "[HW.network.router]": "Encaminadores",
+            "[HW.network.switch]": "Conmutadores",
+            "[HW.network.wap]": "Punto de acceso inalámbrico"
+        }
+    },
+    "[HW.peripheral]": {
+        "name": "Hardware: periféricos",
+        "types": {
+            "[HW.peripheral.crypto]": "Dispositivos criptográficos",
+            "[HW.peripheral.print]": "Periférico de impresión",
+            "[HW.peripheral.scan]": "Escáneres"
+        }
+    },
+    "[S]": {
+        "name": "Servicios",
+        "types": {
+            "[S.dir]": "Servicio de directorio",
+            "[S.edi]": "Intercambio electrónico de datos",
+            "[S.email]": "Correo electrónico",
+            "[S.ext]": "A usuarios externos",
+            "[S.file]": "Almacenamiento de ficheros",
+            "[S.ftp]": "Transferencia de ficheros",
+            "[S.idm]": "Gestión de identidades",
+            "[S.int]": "Interno",
+            "[S.ipm]": "Gestión de privilegios",
+            "[S.pki]": "PKI - infraestructura de clave pública",
+            "[S.pub]": "Al público",
+            "[S.telnet]": "Acceso remoto a cuenta local",
+            "[S.www]": "World Wide Web"
+        }
+    },
+    "[Media.electronic]": {
+        "name": "Soportes de informacion electrónicos",
+        "types": {
+            "[Media.electronic.disk]": "Discos",
+            "[Media.electronic.dvd]": "DVD",
+            "[Media.electronic.ic]": "Tarjetas inteligentes",
+            "[Media.electronic.mc]": "Tarjetas de memoria",
+            "[Media.electronic.san]": "Almacenamiento en red",
+            "[Media.electronic.tape]": "Cinta magnética",
+            "[Media.electronic.usb]": "Memorias USB",
+            "[Media.electronic.vdisk]": "Discos virtuales"
+        }
+    },
+    "[keys.disk]": {
+        "name": "Claves criptograficas: cifrado de soportes de información",
+        "types": {
+            "[keys.disk.encrypt]": "Claves de cifra",
+            "[keys.disk.encrypt.public_decryption]": "Clave privada de descifrado",
+            "[keys.disk.encrypt.public_encryption]": "Clave pública de cifra",
+            "[keys.disk.encrypt.shared_secret]": "Claves simétricas de cifrado",
+            "[keys.disk.sign.public_signature]": "Clave privada de firma",
+            "[keys.disk.sign.public_verification]": "Clave publica de verificación de firma",
+            "[keys.disk.sign.shared_secret]": "Claves simétricas de firma"
+        }
+    },
+    "[arch]": {
+        "name": "Arquitectura del sistema",
+        "types": {
+            "[arch.ext]": "Proporcionado por terceros",
+            "[arch.ip]": "Punto de interconexión",
+            "[arch.sap]": "Punto de acceso al servicio"
+        }
+    },
+    "[SW.prp]": {
+        "name": "Software de desarrollo propio (in house)",
+        "types": {
+            "[SW.prp.inhouse]": "Desarrollo propio (in house)"
+        }
+    },
+    "[Media.non_electronic]": {
+        "name": "Soportes de informacion no electrónicos",
+        "types": {
+            "[Media.non_electronic.printed]": "Material impreso",
+            "[Media.non_electronic.tape]": "Cinta de papel"
+        }
+    }
+}
