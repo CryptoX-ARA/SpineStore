@@ -1,0 +1,1313 @@
+{
+    "org": {
+        "org.*": {
+            "name": "Marco organizativo.*",
+            "actions": {
+                "org.*.1": {
+                    "name": "Política de seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "org.*.2": {
+                    "name": "Normativa de seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "org.*.2.r1": {
+                            "name": "R1-Documentos específicos",
+                            "optional": true
+                        }
+                    }
+                },
+                "org.*.3": {
+                    "name": "Procedimientos de seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "org.*.3.r1": {
+                            "name": "R1-Validación de procedimientos.",
+                            "optional": true
+                        }
+                    }
+                },
+                "org.*.4": {
+                    "name": "Proceso de autorización",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                }
+            }
+        }
+    },
+    "op": {
+        "op.pl": {
+            "name": "Marco operacional.Planificación",
+            "actions": {
+                "op.pl.1": {
+                    "name": "Análisis de riesgos",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.pl.1.r1": {
+                            "name": "R1-Análisis de riesgos semiformal.",
+                            "optional": false
+                        },
+                        "op.pl.1.r2": {
+                            "name": "R2-Análisis de riesgos formal.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.pl.2": {
+                    "name": "Arquitectura de Seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.pl.2.r2": {
+                            "name": "R2-Sistema de gestión de la seguridad con mejora continua.",
+                            "optional": false
+                        },
+                        "op.pl.2.r1": {
+                            "name": "R1-Sistema de gestión.",
+                            "optional": false
+                        },
+                        "op.pl.2.r3": {
+                            "name": "R3-Validación de datos.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.pl.3": {
+                    "name": "Adquisición de nuevos componentes",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "op.pl.4": {
+                    "name": "Dimensionamiento/gestión de la capacidad",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "op.pl.4.r1": {
+                            "name": "R1-Mejora continua de la gestión de la capacidad.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.pl.5": {
+                    "name": "Componentes certificados",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.pl.5.r1": {
+                            "name": "R1-Protección de emisiones electromagnéticas.",
+                            "optional": true
+                        },
+                        "op.pl.5.r2": {
+                            "name": "R2-Lista de componentes software.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        },
+        "op.acc": {
+            "name": "Marco operacional.Control de Acceso",
+            "actions": {
+                "op.acc.1": {
+                    "name": "Identificación",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.acc.1.r1": {
+                            "name": "R1-Identificación avanzada",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.acc.2": {
+                    "name": "Requisitos de acceso",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.acc.2.r2": {
+                            "name": "R2-Control de acceso a dispositivos.",
+                            "optional": true
+                        },
+                        "op.acc.2.r1": {
+                            "name": "R1-Privilegios de acceso.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.acc.3": {
+                    "name": "Segregación de funciones y tareas",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.acc.3.r1": {
+                            "name": "R1-Segregación rigurosa.",
+                            "optional": false
+                        },
+                        "op.acc.3.r2": {
+                            "name": "R2-Privilegios de auditoría.",
+                            "optional": true
+                        },
+                        "op.acc.3.r3": {
+                            "name": "R3-Acceso a la información de seguridad.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.acc.4": {
+                    "name": "Proceso de gestión de derechos de acceso",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "op.acc.5": {
+                    "name": "Mecanismo de autenticación (usuarios externos)",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.acc.5.r2": {
+                            "name": "R2-Contraseña + OTP.",
+                            "optional": false
+                        },
+                        "op.acc.5.r3": {
+                            "name": "R3-Certificados.",
+                            "optional": false
+                        },
+                        "op.acc.5.r4": {
+                            "name": "R4-Certificados en dispositivo físico.",
+                            "optional": false
+                        },
+                        "op.acc.5.r5": {
+                            "name": "R5-Registro.",
+                            "optional": false
+                        },
+                        "op.acc.5.r6": {
+                            "name": "R6-Limitación de la ventana de acceso.",
+                            "optional": true
+                        },
+                        "op.acc.5.r7": {
+                            "name": "R7-Suspensión por no utilización.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.acc.6": {
+                    "name": "Mecanismo de autenticación (usuarios de la organización)",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.acc.6.r1": {
+                            "name": "R1-Contraseñas.",
+                            "optional": false
+                        },
+                        "op.acc.6.r2": {
+                            "name": "R2-Contraseña + otro factor de autenticación.",
+                            "optional": false
+                        },
+                        "op.acc.6.r3": {
+                            "name": "R3-Certificados.",
+                            "optional": false
+                        },
+                        "op.acc.6.r4": {
+                            "name": "R4-Certificados en dispositivo físico.",
+                            "optional": false
+                        },
+                        "op.acc.6.r5": {
+                            "name": "R5-Registro.",
+                            "optional": false
+                        },
+                        "op.acc.6.r6": {
+                            "name": "R6-Limitación de la ventana de acceso.",
+                            "optional": false
+                        },
+                        "op.acc.6.r7": {
+                            "name": "R7-Suspensión por no utilización.",
+                            "optional": false
+                        },
+                        "op.acc.6.r8": {
+                            "name": "R8-Doble factor para acceso desde o a través de zonas no controladas.",
+                            "optional": false
+                        },
+                        "op.acc.6.r9": {
+                            "name": "R9-Acceso remoto (todos los niveles).",
+                            "optional": false
+                        }
+                    }
+                }
+            }
+        },
+        "op.exp": {
+            "name": "Marco operacional.Explotación",
+            "actions": {
+                "op.exp.1": {
+                    "name": "Inventario de activos",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.1.r1": {
+                            "name": "R1-Inventario de etiquetado.",
+                            "optional": true
+                        },
+                        "op.exp.1.r2": {
+                            "name": "R2-Identificación periódica de activos.",
+                            "optional": true
+                        },
+                        "op.exp.1.r3": {
+                            "name": "R3-Identificación de activos críticos.",
+                            "optional": true
+                        },
+                        "op.exp.1.r4": {
+                            "name": "R4-Lista de componentes software.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.exp.2": {
+                    "name": "Configuración de seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "op.exp.3": {
+                    "name": "Gestión de la configuración de seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.3.r1": {
+                            "name": "R1-Mantenimiento regular de la configuración.",
+                            "optional": false
+                        },
+                        "op.exp.3.r2": {
+                            "name": "R2-Responsabilidad de la configuración.",
+                            "optional": false
+                        },
+                        "op.exp.3.r3": {
+                            "name": "R3-Copias de seguridad.",
+                            "optional": false
+                        },
+                        "op.exp.3.r4": {
+                            "name": "R4-Aplicación de la configuración.",
+                            "optional": true
+                        },
+                        "op.exp.3.r5": {
+                            "name": "R5-Control del estado de seguridad de la Configuración.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.exp.4": {
+                    "name": "Mantenimiento y actualizaciones de seguridad",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.4.r1": {
+                            "name": "R1-Pruebas en preproducción.",
+                            "optional": false
+                        },
+                        "op.exp.4.r2": {
+                            "name": "R2-Prevención de fallos.",
+                            "optional": false
+                        },
+                        "op.exp.4.r3": {
+                            "name": "R3-Actualizaciones y pruebas periódicas.",
+                            "optional": true
+                        },
+                        "op.exp.4.r4": {
+                            "name": "R4 - Monitorización continua.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.exp.5": {
+                    "name": "Gestión de cambios",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.5.r1": {
+                            "name": "R1-Prevención de fallos.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.exp.6": {
+                    "name": "Protección frente a código dañino",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.6.r1": {
+                            "name": "R1-Escaneo periódico.",
+                            "optional": false
+                        },
+                        "op.exp.6.r2": {
+                            "name": "R2-Revisión preventiva del sistema.",
+                            "optional": false
+                        },
+                        "op.exp.6.r3": {
+                            "name": "R3 - Lista blanca.",
+                            "optional": false
+                        },
+                        "op.exp.6.r4": {
+                            "name": "R4-Capacidad de respuesta en caso de incidente.",
+                            "optional": false
+                        },
+                        "op.exp.6.r5": {
+                            "name": "R5-Configuración de la herramienta de detección de código dañino.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.exp.7": {
+                    "name": "Gestión de incidentes",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.7.r1": {
+                            "name": "R1-Notificación.",
+                            "optional": false
+                        },
+                        "op.exp.7.r2": {
+                            "name": "R2 –Detección y Respuesta.",
+                            "optional": false
+                        },
+                        "op.exp.7.r3": {
+                            "name": "R3-Reconfiguración dinámica.",
+                            "optional": false
+                        },
+                        "op.exp.7.r4": {
+                            "name": "R4-Prevención y Respuesta Automática.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.exp.8": {
+                    "name": "Registro de la actividad",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.8.r1": {
+                            "name": "R1-Revisión de los registros.",
+                            "optional": false
+                        },
+                        "op.exp.8.r2": {
+                            "name": "R2-Sincronización del reloj del sistema.",
+                            "optional": false
+                        },
+                        "op.exp.8.r3": {
+                            "name": "R3-Retención de registros.",
+                            "optional": false
+                        },
+                        "op.exp.8.r4": {
+                            "name": "R4-Control de acceso.",
+                            "optional": false
+                        },
+                        "op.exp.8.r5": {
+                            "name": "R5-Revisión automática y correlación de eventos.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.exp.9": {
+                    "name": "Registro de la gestión de incidentes",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "op.exp.10": {
+                    "name": "Protección de claves criptográficas",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.exp.10.r1": {
+                            "name": "R1-Algoritmos autorizados.",
+                            "optional": false
+                        },
+                        "op.exp.10.r2": {
+                            "name": "R2-Protección avanzada de claves criptográficas.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        },
+        "op.ext": {
+            "name": "Marco operacional.Recursos externos",
+            "actions": {
+                "op.ext.1": {
+                    "name": "Contratación y acuerdos de nivel de servicio",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "op.ext.2": {
+                    "name": "Gestión diaria",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "op.ext.3": {
+                    "name": "Protección de la cadena de suministro",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.ext.3.r1": {
+                            "name": "R1-Plan de contingencia.",
+                            "optional": true
+                        },
+                        "op.ext.3.r2": {
+                            "name": "R2-Sistema de gestión de la seguridad.",
+                            "optional": true
+                        },
+                        "op.ext.3.r3": {
+                            "name": "R3-Lista de componentes software.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.ext.4": {
+                    "name": "Interconexión de sistemas ",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.ext.4.r1": {
+                            "name": "R1-Coordinación de actividades.",
+                            "optional": false
+                        }
+                    }
+                }
+            }
+        },
+        "op.nub": {
+            "name": "Marco operacional.Servicios en la nube",
+            "actions": {
+                "op.nub.1": {
+                    "name": "Protección de servicios en la nube",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.nub.1.r1": {
+                            "name": "R1- Servicios certificados.",
+                            "optional": false
+                        },
+                        "op.nub.1.r2": {
+                            "name": "R2-Guías de Configuración de Seguridad Específicas.",
+                            "optional": false
+                        }
+                    }
+                }
+            }
+        },
+        "op.cont": {
+            "name": "Marco operacional.Continuidad del servicio",
+            "actions": {
+                "op.cont.1": {
+                    "name": "Análisis de impacto",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {}
+                },
+                "op.cont.2": {
+                    "name": "Plan de continuidad",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "op.cont.2.r1": {
+                            "name": "R1-Plan de emergencia y contingencia.",
+                            "optional": true
+                        },
+                        "op.cont.2.r2": {
+                            "name": "R2-Comprobación de integridad.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.cont.3": {
+                    "name": "Pruebas periódicas",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {}
+                },
+                "op.cont.4": {
+                    "name": "Medios alternativos",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "op.cont.4.r1": {
+                            "name": "R1-Automatización de la transición a medios alternativos.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        },
+        "op.mon": {
+            "name": "Marco operacional.Monitorización del sistema",
+            "actions": {
+                "op.mon.1": {
+                    "name": "Detección de intrusión",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.mon.1.r1": {
+                            "name": "R1-Detección basada en reglas.",
+                            "optional": false
+                        },
+                        "op.mon.1.r2": {
+                            "name": "R2-Procedimientos de respuesta.",
+                            "optional": false
+                        },
+                        "op.mon.1.r3": {
+                            "name": "R3-Acciones predeterminadas.",
+                            "optional": true
+                        }
+                    }
+                },
+                "op.mon.2": {
+                    "name": "Sistema de métricas",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.mon.2.r1": {
+                            "name": "R1-Efectividad del sistema de gestión de incidentes.",
+                            "optional": false
+                        },
+                        "op.mon.2.r2": {
+                            "name": "R2-Eficiencia del sistema de gestión de la seguridad.",
+                            "optional": false
+                        }
+                    }
+                },
+                "op.mon.3": {
+                    "name": "Vigilancia",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "op.mon.3.r1": {
+                            "name": "R1-Correlación de eventos.",
+                            "optional": false
+                        },
+                        "op.mon.3.r2": {
+                            "name": "R2-Análisis dinámico.",
+                            "optional": false
+                        },
+                        "op.mon.3.r3": {
+                            "name": "R3-Ciberamenazas avanzadas.",
+                            "optional": false
+                        },
+                        "op.mon.3.r4": {
+                            "name": "R4-Observatorios digitales.",
+                            "optional": false
+                        },
+                        "op.mon.3.r5": {
+                            "name": "R5-Minería de datos.",
+                            "optional": false
+                        },
+                        "op.mon.3.r6": {
+                            "name": "R6-Inspecciones de seguridad.",
+                            "optional": false
+                        },
+                        "op.mon.3.r7": {
+                            "name": "R7-Interconexiones.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "mp": {
+        "mp.if": {
+            "name": "Medidas de protección.Protección de las instalaciones e infraestructuras",
+            "actions": {
+                "mp.if.1": {
+                    "name": "Áreas separadas y con control de acceso",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.if.2": {
+                    "name": "Identificación de las personas",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.if.3": {
+                    "name": "Acondicionamiento de los locales",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.if.4": {
+                    "name": "Energía eléctrica",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.if.4.r1": {
+                            "name": "R1-Suministro eléctrico de emergencia.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.if.5": {
+                    "name": "Protección frente a incendios",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {}
+                },
+                "mp.if.6": {
+                    "name": "Protección frente a inundaciones",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {}
+                },
+                "mp.if.7": {
+                    "name": "Registro de entrada y salida de equipamiento",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                }
+            }
+        },
+        "mp.per": {
+            "name": "Medidas de protección.Gestión del personal",
+            "actions": {
+                "mp.per.1": {
+                    "name": "Caracterización del puesto de trabajo",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.per.1.r1": {
+                            "name": "R1-Habilitación Personal de Seguridad.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.per.2": {
+                    "name": "Deberes y obligaciones",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.per.2.r1": {
+                            "name": "R1-Confirmación expresa.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.per.3": {
+                    "name": "Concienciación",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.per.4": {
+                    "name": "Formación",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                }
+            }
+        },
+        "mp.eq": {
+            "name": "Medidas de protección.Protección de los equipos",
+            "actions": {
+                "mp.eq.1": {
+                    "name": "Puesto de trabajo despejado",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.eq.1.r1": {
+                            "name": "R1-Almacenamiento del material.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.eq.2": {
+                    "name": "Bloqueo de puesto de trabajo",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.eq.2.r1": {
+                            "name": "R1-Cierre de sesiones.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.eq.3": {
+                    "name": "Protección de dispositivos portátiles",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.eq.3.r1": {
+                            "name": "R1– Cifrado del disco.",
+                            "optional": false
+                        },
+                        "mp.eq.3.r2": {
+                            "name": "R2– Entornos protegidos.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.eq.4": {
+                    "name": "Otros dispositivos conectados a la red",
+                    "confidentiality": true,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.eq.4.r1": {
+                            "name": "R1-Productos certificados.",
+                            "optional": false
+                        },
+                        "mp.eq.4.r2": {
+                            "name": "R2-Control de dispositivos conectados a la red.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        },
+        "mp.com": {
+            "name": "Medidas de protección.Protección de las comunicaciones",
+            "actions": {
+                "mp.com.1": {
+                    "name": "Perímetro seguro",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.com.2": {
+                    "name": "Protección de la confidencialidad",
+                    "confidentiality": true,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.com.2.r1": {
+                            "name": "R1-Algoritmos y parámetros autorizados.",
+                            "optional": false
+                        },
+                        "mp.com.2.r2": {
+                            "name": "R2-Dispositivos hardware.",
+                            "optional": false
+                        },
+                        "mp.com.2.r3": {
+                            "name": "R3-Productos certificados.",
+                            "optional": false
+                        },
+                        "mp.com.2.r4": {
+                            "name": "R4-Cifradores.",
+                            "optional": true
+                        },
+                        "mp.com.2.r5": {
+                            "name": "R5-Cifrado de información especialmente sensible.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.com.3": {
+                    "name": "Protección de la integridad y de la autenticidad",
+                    "confidentiality": false,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.com.3.r1": {
+                            "name": "R1-Redes privadas virtuales.",
+                            "optional": false
+                        },
+                        "mp.com.3.r2": {
+                            "name": "R2-Algoritmos y parámetros autorizados.",
+                            "optional": false
+                        },
+                        "mp.com.3.r3": {
+                            "name": "R3-Dispositivos hardware.",
+                            "optional": false
+                        },
+                        "mp.com.3.r4": {
+                            "name": "R4-Productos certificados.",
+                            "optional": false
+                        },
+                        "mp.com.3.r5": {
+                            "name": "R5-Cifradores.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.com.4": {
+                    "name": "Separación de flujos de información en la red",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.com.4.r2": {
+                            "name": "R2-Segmentación lógica avanzada.",
+                            "optional": false
+                        },
+                        "mp.com.4.r3": {
+                            "name": "R3-Segmentación física.",
+                            "optional": false
+                        },
+                        "mp.com.4.r4": {
+                            "name": "R4-Puntos de interconexión.",
+                            "optional": false
+                        }
+                    }
+                }
+            }
+        },
+        "mp.si": {
+            "name": "Medidas de protección.Protección de los soportes de información",
+            "actions": {
+                "mp.si.1": {
+                    "name": "Marcado de soportes",
+                    "confidentiality": true,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.si.1.r1": {
+                            "name": "R1-Marca de agua digital.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.si.2": {
+                    "name": "Criptografía",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.si.2.r1": {
+                            "name": "R1– Productos certificados.",
+                            "optional": false
+                        },
+                        "mp.si.2.r2": {
+                            "name": "R2-Copias de seguridad.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.si.3": {
+                    "name": "Custodia",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.si.4": {
+                    "name": "Transporte",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.si.5": {
+                    "name": "Borrado y destrucción",
+                    "confidentiality": true,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.si.5.r1": {
+                            "name": "R1-Productos certificados.",
+                            "optional": false
+                        },
+                        "mp.si.5.r2": {
+                            "name": "R2 - Destrucción de soportes.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        },
+        "mp.sw": {
+            "name": "Medidas de protección.Protección de las aplicaciones informáticas",
+            "actions": {
+                "mp.sw.1": {
+                    "name": "Desarrollo de aplicaciones",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.sw.1.r1": {
+                            "name": "R1-Mínimo privilegio.",
+                            "optional": false
+                        },
+                        "mp.sw.1.r2": {
+                            "name": "R2-Metodología de desarrollo seguro.",
+                            "optional": false
+                        },
+                        "mp.sw.1.r3": {
+                            "name": "R3-Seguridad desde el diseño.",
+                            "optional": false
+                        },
+                        "mp.sw.1.r4": {
+                            "name": "R4-Datos de pruebas.",
+                            "optional": false
+                        },
+                        "mp.sw.1.r5": {
+                            "name": "R5-Lista de componentes software.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.sw.2": {
+                    "name": "Aceptación y puesta en servicio",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.sw.2.r1": {
+                            "name": "R1- Pruebas.",
+                            "optional": false
+                        },
+                        "mp.sw.2.r2": {
+                            "name": "R2-Inspección de código fuente.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        },
+        "mp.info": {
+            "name": "Medidas de protección.Protección de la información",
+            "actions": {
+                "mp.info.1": {
+                    "name": "Datos personales",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.info.2": {
+                    "name": "Calificación de la información",
+                    "confidentiality": true,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {}
+                },
+                "mp.info.3": {
+                    "name": "Firma electrónica",
+                    "confidentiality": false,
+                    "integrity": true,
+                    "availability": false,
+                    "authenticity": true,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.info.3.r1": {
+                            "name": "R1-Certificados cualificados.",
+                            "optional": false
+                        },
+                        "mp.info.3.r2": {
+                            "name": "R2-Algoritmos y parámetros autorizados.",
+                            "optional": false
+                        },
+                        "mp.info.3.r3": {
+                            "name": "R3-Verificación y validación de firma.",
+                            "optional": false
+                        },
+                        "mp.info.3.r4": {
+                            "name": "R4-Firma electrónica avanzada basada en certificados cualificados.",
+                            "optional": false
+                        },
+                        "mp.info.3.r5": {
+                            "name": "R5-Firma electrónica cualificada.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.info.4": {
+                    "name": "Sellos de tiempo",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.info.4.r1": {
+                            "name": "R1-Productos certificados.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.info.5": {
+                    "name": "Limpieza de documentos",
+                    "confidentiality": true,
+                    "integrity": false,
+                    "availability": false,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {}
+                },
+                "mp.info.6": {
+                    "name": "Copias de seguridad",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.info.6.r1": {
+                            "name": "R1-Pruebas de recuperación.",
+                            "optional": false
+                        },
+                        "mp.info.6.r2": {
+                            "name": "R2-Protección de las copias de seguridad.",
+                            "optional": false
+                        }
+                    }
+                }
+            }
+        },
+        "mp.s": {
+            "name": "Medidas de protección.Protección de los servicios",
+            "actions": {
+                "mp.s.1": {
+                    "name": "Protección del correo electrónico",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {}
+                },
+                "mp.s.2": {
+                    "name": "Protección de servicios y aplicaciones web",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.s.2.r2": {
+                            "name": "R2-Auditorías de seguridad avanzada.",
+                            "optional": false
+                        },
+                        "mp.s.2.r3": {
+                            "name": "R3-Protección de las cachés.",
+                            "optional": false
+                        }
+                    }
+                },
+                "mp.s.3": {
+                    "name": "Protección de la navegación web",
+                    "confidentiality": true,
+                    "integrity": true,
+                    "availability": true,
+                    "authenticity": true,
+                    "traceability": true,
+                    "reinforcements": {
+                        "mp.s.3.r1": {
+                            "name": "R1 - Monitorización.",
+                            "optional": false
+                        },
+                        "mp.s.3.r2": {
+                            "name": "R2-Destinos autorizados.",
+                            "optional": true
+                        }
+                    }
+                },
+                "mp.s.4": {
+                    "name": "Protección frente a denegación de servicio",
+                    "confidentiality": false,
+                    "integrity": false,
+                    "availability": true,
+                    "authenticity": false,
+                    "traceability": false,
+                    "reinforcements": {
+                        "mp.s.4.r1": {
+                            "name": "R1-Detección y reacción.",
+                            "optional": false
+                        },
+                        "mp.s.4.r2": {
+                            "name": "R2-Ataques propios.",
+                            "optional": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -17,6 +17,13 @@ SpineStore es una colección de normativas para la gestión del riesgo en format
 - Actualizados regularmente según las últimas versiones de las normativas
 - Organizados por categorías para facilitar la búsqueda
 
+## 💼 Soporte actual
+
+Actualmente, SpineStore cuenta las siguientes certificaciones:
+
+- [Esquema Nacional de Seguridad (ENS)](certs/ENS/README.md)
+- [MAGERIT](certs/MAGERIT/README.md)
+- ISO-IEC 27001:2022**: Esta certificación es de pago, si la ha comprado contacte con soporte@inixa.com y no habrá problema en compartirla.
 
 ## 🛠️ Uso
 
