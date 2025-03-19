@@ -2,7 +2,7 @@
 
 # SpineStore
 
-<img src="img/logo_wide.png" alt="HedgeHoard Logo" width="100%" />
+<img src="img/logo_wide.png" alt="SpineStore Logo" width="100%" />
 
 SpineStore nace de la necesidad de utilizar normativas como ISO 27000 o ENS en software especializado. Obtener los catálogos de las normas es generalmente muy tedioso, por lo tanto decidimos liberar estas certificaciones en formato JSON para así poder ser utilizadas para ser procesadas por software o bien para introducirlas cómodamente en un asistente de IA.
 
