@@ -1,0 +1,1442 @@
+{
+    "title": "Anexo 5 - Lista de amenazas y sus correspondientes medidas de mitigación",
+    "parts": {
+        "A": "Vulnerabilidad o método de ataque relacionados con las amenazas",
+        "B": "Medidas de mitigación de las amenazas dirigidas a vehículos",
+        "C": "Medidas de mitigación de las amenazas externas al vehículo"
+    },
+    "threats": {
+        "1.1": {
+            "category": "Servidores back-end",
+            "name": "Abuso de privilegios interno",
+            "description": "Abuso de privilegios por parte del personal (ataque interno)",
+            "mitigation_ids": [
+                "M1"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "1.2": {
+            "category": "Servidores back-end",
+            "name": "Acceso no autorizado remoto",
+            "description": "Acceso no autorizado al servidor a través de Internet (posibilitado, por ejemplo, por backdoors, vulnerabilidades de un software del sistema sin parches, ataques SQL u otros medios)",
+            "mitigation_ids": [
+                "M2"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "1.3": {
+            "category": "Servidores back-end",
+            "name": "Acceso físico no autorizado",
+            "description": "Acceso físico no autorizado al servidor (por ejemplo, mediante memorias USB u otros medios de conexión al servidor)",
+            "mitigation_ids": [
+                "M8"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "2.1": {
+            "category": "Servidores back-end",
+            "name": "Interrupción de servicios críticos",
+            "description": "El ataque al servidor back-end interrumpe su funcionamiento, por ejemplo evita que interactúe con los vehículos y les preste servicios de los que dependen",
+            "mitigation_ids": [
+                "M3"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "3.1": {
+            "category": "Servidores back-end",
+            "name": "Abuso de privilegios interno para datos",
+            "description": "Abuso de privilegios por parte del personal (ataque interno)",
+            "mitigation_ids": [
+                "M1"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "3.2": {
+            "category": "Servidores back-end",
+            "name": "Pérdida de datos en nube",
+            "description": "Pérdida de información en la nube. Pueden perderse datos sensibles debido a ataques o accidentes cuando el almacenamiento de los datos corre a cargo de terceros proveedores de servicios en la nube",
+            "mitigation_ids": [
+                "M4"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "3.3": {
+            "category": "Servidores back-end",
+            "name": "Acceso no autorizado para datos",
+            "description": "Acceso no autorizado al servidor a través de Internet (posibilitado, por ejemplo, por backdoors, vulnerabilidades de un software del sistema sin parches, ataques SQL u otros medios)",
+            "mitigation_ids": [
+                "M2"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "3.4": {
+            "category": "Servidores back-end",
+            "name": "Acceso físico para datos",
+            "description": "Acceso físico no autorizado al servidor (por ejemplo, mediante memorias USB u otros medios de conexión al servidor)",
+            "mitigation_ids": [
+                "M8"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "3.5": {
+            "category": "Servidores back-end",
+            "name": "Intercambio de datos no intencionado",
+            "description": "Violación de la seguridad de los datos por un intercambio de datos no intencionado (p. ej., errores administrativos)",
+            "mitigation_ids": [
+                "M5"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "4.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Suplantación de mensajes",
+            "description": "Falsificación de mensajes por suplantación de identidad (p. ej., 802.11p V2X durante la marcha en pelotón, mensajes GNSS, etc.)",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "4.2": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Ataque Sybil",
+            "description": "Ataque Sybil (a fin de suplantar la identidad de otros vehículos como si hubiera muchos vehículos en la carretera)",
+            "mitigation_ids": [
+                "M11"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "5.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Introducción de código malicioso",
+            "description": "Los canales de comunicación permiten la introducción de un código, por ejemplo, se puede introducir un código binario de software manipulado en el flujo de comunicación",
+            "mitigation_ids": [
+                "M10",
+                "M6"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "5.2": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Manipulación de datos almacenados",
+            "description": "Los canales de comunicación permiten la manipulación de los datos o el código almacenados por el vehículo",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "5.3": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Sobreescritura de datos",
+            "description": "Los canales de comunicación permiten sobreescribir los datos o el código almacenados por el vehículo",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "5.4": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Borrado de datos",
+            "description": "Los canales de comunicación permiten borrar los datos o el código almacenados por el vehículo",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "5.5": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Escritura no autorizada",
+            "description": "Los canales de comunicación permiten introducir datos o el código en el vehículo (escritura de datos/código)",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "6.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Información de fuente no confiable",
+            "description": "Aceptación de información de una fuente poco fiable o que no es de confianza",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "6.2": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Ataque de intermediario",
+            "description": "Ataque de intermediario / secuestro de sesión",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "6.3": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Ataque de repetición",
+            "description": "Ataque de repetición, por ejemplo, un ataque contra una pasarela de comunicación permite al atacante devolver a una versión anterior el software de una unidad de control electrónico o el firmware de la pasarela",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "7.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Interceptación de comunicaciones",
+            "description": "Interceptación de la información / radiaciones interferentes / control de las comunicaciones",
+            "mitigation_ids": [
+                "M12"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "7.2": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Acceso a archivos no autorizado",
+            "description": "Obtención de acceso no autorizado a archivos o datos",
+            "mitigation_ids": [
+                "M8"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "8.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Saturación de datos",
+            "description": "Envío de un gran número de datos inútiles al sistema de información del vehículo para que este no pueda prestar servicios de la forma habitual",
+            "mitigation_ids": [
+                "M13"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "8.2": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Ataque de agujero negro",
+            "description": "Ataque de agujero negro, interrupción de la comunicación entre vehículos mediante el bloqueo de la transmisión de mensajes a otros vehículos",
+            "mitigation_ids": [
+                "M13"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "9.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Elevación de privilegios",
+            "description": "Un usuario sin privilegios puede obtener acceso privilegiado, por ejemplo, acceso root",
+            "mitigation_ids": [
+                "M9"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "10.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Infección por virus",
+            "description": "Un virus integrado en los medios de comunicación infecta los sistemas del vehículo",
+            "mitigation_ids": [
+                "M14"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "11.1": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Mensajes CAN maliciosos",
+            "description": "Mensajes internos maliciosos (p. ej., CAN)",
+            "mitigation_ids": [
+                "M15"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "11.2": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Mensajes V2X maliciosos",
+            "description": "Mensajes V2X maliciosos, p. ej., mensajes de infraestructura a vehículo o de vehículo a vehículo (CAM, DENM)",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "11.3": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Mensajes de diagnóstico maliciosos",
+            "description": "Mensajes de diagnóstico maliciosos",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "11.4": {
+            "category": "Canales de comunicación del vehículo",
+            "name": "Mensajes propietarios maliciosos",
+            "description": "Mensajes propietarios maliciosos (p. ej., los que normalmente se envían desde el fabricante de equipo original o el proveedor de componentes/sistemas/funciones)",
+            "mitigation_ids": [
+                "M10"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "12.1": {
+            "category": "Proceso de actualización",
+            "name": "Actualización inalámbrica comprometida",
+            "description": "Compromiso de los procedimientos inalámbricos de actualización de software. Esto incluye la falsificación del programa de actualización del sistema o firmware",
+            "mitigation_ids": [
+                "M16"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "12.2": {
+            "category": "Proceso de actualización",
+            "name": "Actualización física comprometida",
+            "description": "Compromiso de los procedimientos locales/físicos de actualización de software. Esto incluye la falsificación del programa de actualización del sistema o firmware",
+            "mitigation_ids": [
+                "M16"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "12.3": {
+            "category": "Proceso de actualización",
+            "name": "Software manipulado pre-actualización",
+            "description": "El software se manipula antes del proceso de actualización (y está, por tanto, corrompido), aunque el proceso de actualización esté intacto",
+            "mitigation_ids": [
+                "M16"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "12.4": {
+            "category": "Proceso de actualización",
+            "name": "Claves criptográficas comprometidas",
+            "description": "Compromiso de las claves criptográficas del proveedor de software para permitir una actualización inválida",
+            "mitigation_ids": [
+                "M11"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "13.1": {
+            "category": "Proceso de actualización",
+            "name": "DoS en servidor de actualización",
+            "description": "Ataque de denegación de servicio contra un servidor o red de actualización para impedir el lanzamiento de actualizaciones de software crítico o el desbloqueo de características específicas del cliente",
+            "mitigation_ids": [
+                "M3"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "15.1": {
+            "category": "Acciones humanas involuntarias",
+            "name": "Ingeniería social",
+            "description": "Se engaña a una víctima inocente (p. ej., un propietario, un operario o un ingeniero de mantenimiento) para que inicie una acción de tal manera que, de forma no intencionada, cargue software malicioso o permita un ataque",
+            "mitigation_ids": [
+                "M18"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "15.2": {
+            "category": "Acciones humanas involuntarias",
+            "name": "Incumplimiento de procedimientos",
+            "description": "No se siguen los procedimientos de seguridad definidos",
+            "mitigation_ids": [
+                "M19"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": true
+            }
+        },
+        "16.1": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Manipulación de control remoto",
+            "description": "Manipulación de las funciones diseñadas para operar los sistemas a distancia, como una llave de control remoto, un inmovilizador y una estación de carga",
+            "mitigation_ids": [
+                "M20"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "16.2": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Manipulación de sistemas telemáticos",
+            "description": "Manipulación de los sistemas telemáticos del vehículo (p. ej., manipulación de la medición de la temperatura de mercancías delicadas, desbloqueo remoto de puertas de carga)",
+            "mitigation_ids": [
+                "M20"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "16.3": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Interferencia con sensores inalámbricos",
+            "description": "Interferencia con sensores o sistemas inalámbricos de corto alcance",
+            "mitigation_ids": [
+                "M20"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "17.1": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Aplicaciones corruptas",
+            "description": "Aplicaciones corruptas, o aplicaciones con una mala seguridad de software utilizadas como método para atacar los sistemas del vehículo",
+            "mitigation_ids": [
+                "M21"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "18.1": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Ataques por puertos externos",
+            "description": "Interfaces externas como puertos USB u otros puertos utilizadas como punto de ataque, por ejemplo, mediante la introducción de un código",
+            "mitigation_ids": [
+                "M22"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "18.2": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Medios infectados",
+            "description": "Medios infectados con virus conectados al vehículo",
+            "mitigation_ids": [
+                "M22"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "18.3": {
+            "category": "Conectividad externa y conexiones externas",
+            "name": "Abuso de acceso a diagnóstico",
+            "description": "Uso del acceso al diagnóstico (p. ej., mochilas en el puerto ODB) para facilitar un ataque, p. ej., para manipular los parámetros del vehículo (de manera directa o indirecta)",
+            "mitigation_ids": [
+                "M22"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "19.1": {
+            "category": "Datos o código del vehículo",
+            "name": "Extracción de software propietario",
+            "description": "Extracción de software propietario o protegido con derechos de autor de los sistemas del vehículo (piratería)",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "19.2": {
+            "category": "Datos o código del vehículo",
+            "name": "Acceso a información personal",
+            "description": "Acceso no autorizado a la información personal del propietario, como su identidad, información sobre cuentas de pago, información sobre sus contactos, información sobre la ubicación, identificación electrónica del vehículo, etc.",
+            "mitigation_ids": [
+                "M8"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "19.3": {
+            "category": "Datos o código del vehículo",
+            "name": "Extracción de claves criptográficas",
+            "description": "Extracción de claves criptográficas",
+            "mitigation_ids": [
+                "M11"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "20.1": {
+            "category": "Datos o código del vehículo",
+            "name": "Cambio en identificación del vehículo",
+            "description": "Cambios ilícitos o no autorizados en la identificación electrónica del vehículo",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "20.2": {
+            "category": "Datos o código del vehículo",
+            "name": "Fraude de identidad",
+            "description": "Fraude de identidad. Por ejemplo, si un usuario desea mostrar otra identidad cuando se comunica con sistemas de peaje o back-end del fabricante",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": false,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "20.3": {
+            "category": "Datos o código del vehículo",
+            "name": "Evasión de supervisión",
+            "description": "Acción para eludir los sistemas de supervisión (p. ej., piratear/manipular/bloquear mensajes como los datos del dispositivo de seguimiento ODR-Tracker o el número de ejecuciones)",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": true
+            }
+        },
+        "20.4": {
+            "category": "Datos o código del vehículo",
+            "name": "Falsificación de datos de conducción",
+            "description": "Manipulación de datos para falsificar los datos de conducción del vehículo (p. ej., kilometraje, velocidad de conducción, instrucciones de conducción, etc.)",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": true
+            }
+        },
+        "20.5": {
+            "category": "Datos o código del vehículo",
+            "name": "Alteración de datos diagnósticos",
+            "description": "Cambios no autorizados en los datos de diagnóstico del sistema",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": true
+            }
+        },
+        "21.1": {
+            "category": "Datos o código del vehículo",
+            "name": "Manipulación de registros",
+            "description": "Borrado o manipulación no autorizados de los registros de eventos del sistema",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": true
+            }
+        },
+        "22.2": {
+            "category": "Datos o código del vehículo",
+            "name": "Introducción de malware",
+            "description": "Introducción de software malicioso o actividad de software malicioso",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "23.1": {
+            "category": "Datos o código del vehículo",
+            "name": "Falsificación de software de control",
+            "description": "Fabricación de software del sistema de control o del sistema de información del vehículo",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "24.1": {
+            "category": "Datos o código del vehículo",
+            "name": "DoS en red interna",
+            "description": "Denegación del servicio, por ejemplo, esta acción puede desencadenarse en la red interna mediante la inundación de un bus CAN o la provocación de fallos en una unidad de control electrónico a través de una alta tasa de mensajes",
+            "mitigation_ids": [
+                "M13"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "25.1": {
+            "category": "Datos o código del vehículo",
+            "name": "Falsificación de parámetros críticos",
+            "description": "Acceso no autorizado para falsificar los parámetros de configuración de las funciones clave del vehículo, como los datos de freno, el umbral de despliegue de los airbags, etc.",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "25.2": {
+            "category": "Datos o código del vehículo",
+            "name": "Falsificación de parámetros de carga",
+            "description": "Acceso no autorizado para falsificar los parámetros de carga, como la tensión de carga, la potencia de carga, la temperatura de la batería, etc.",
+            "mitigation_ids": [
+                "M7"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "26.1": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Claves criptográficas débiles",
+            "description": "La combinación de claves de cifrado cortas y un período de validez largo permite al atacante descifrar las claves del sistema de cifrado",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "26.2": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Criptografía insuficiente",
+            "description": "Uso insuficiente de algoritmos criptográficos para proteger sistemas sensibles",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "26.3": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Algoritmos obsoletos",
+            "description": "Uso de algoritmos criptográficos obsoletos",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "27.1": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Diseño vulnerable",
+            "description": "Hardware o software diseñados para permitir un ataque o que no cumplen los criterios de diseño para detener un ataque",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "28.1": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Errores de software",
+            "description": "Errores de software. La presencia de errores de software puede ser la base de posibles vulnerabilidades aprovechables. Esto se aplica sobre todo si el software no se ha probado para verificar que no contiene un mal código conocido o errores conocidos y reducir el riesgo de que contenga un mal código desconocido o errores desconocidos",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "28.2": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Residuos de desarrollo",
+            "description": "El uso de restos de la fase de desarrollo (p. ej., puertos de depuración, puertos JTAG, microprocesadores, certificados de desarrollo, contraseñas de desarrolladores, etc.) puede permitir a un atacante acceder a las unidades de control electrónico u obtener mayores privilegios",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "29.1": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Puertos abiertos",
+            "description": "Puertos de Internet que se dejan abiertos y dan acceso a sistemas de redes",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "29.2": {
+            "category": "Vulnerabilidades que podrían explotarse",
+            "name": "Elusión de separación de redes",
+            "description": "Eludir la separación de redes para obtener el control. Un ejemplo específico es el uso de puntos de acceso o pasarelas no protegidas (como pasarelas camión-remolque) para eludir las protecciones y obtener acceso a otros segmentos de la red con vistas a llevar a cabo actos malintencionados, como enviar mensajes de bus CAN arbitrarios",
+            "mitigation_ids": [
+                "M23"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "30.1": {
+            "category": "Pérdida física de datos",
+            "name": "Daños físicos por terceros",
+            "description": "Daños causados por un tercero. Pueden perderse datos sensibles o verse comprometidos debido a daños físicos en caso de accidentes de tráfico o robos",
+            "mitigation_ids": [
+                "M24"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "30.2": {
+            "category": "Pérdida física de datos",
+            "name": "Pérdida por DRM",
+            "description": "Pérdida derivada de conflictos en la gestión de derechos digitales. Pueden borrarse datos de usuario por cuestiones relativas a la gestión de derechos digitales",
+            "mitigation_ids": [
+                "M24"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "30.3": {
+            "category": "Pérdida física de datos",
+            "name": "Desgaste de componentes",
+            "description": "La integridad de los datos sensibles se puede perder debido al desgaste de componentes informáticos, lo que puede provocar problemas en cascada (en caso de alteración de claves, por ejemplo)",
+            "mitigation_ids": [
+                "M24"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "31.1": {
+            "category": "Pérdida de datos/violación de la seguridad de los datos del vehículo",
+            "name": "Violación de privacidad en cambio de usuario",
+            "description": "Violación de la seguridad de los datos. Se puede violar la seguridad de los datos personales cuando el coche cambia de usuario (p. ej., cuando se vende o se usa como vehículo de alquiler con nuevos arrendatarios)",
+            "mitigation_ids": [
+                "M24"
+            ],
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "32.1": {
+            "category": "Manipulación física de los sistemas",
+            "name": "Instalación de hardware no autorizado",
+            "description": "La manipulación del hardware del fabricante de equipo original, p. ej., la instalación de hardware no autorizado en un vehículo para posibilitar un ataque de intermediario",
+            "mitigation_ids": [
+                "M9"
+            ],
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        }
+    },
+    "mitigations": {
+        "M1": {
+            "name": "Control Seguridad Interna Backend",
+            "description": "Se aplican controles de seguridad a los sistemas de back-end para minimizar el riesgo de un ataque interno",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "M2": {
+            "name": "Control Accesos No Autorizados Backend",
+            "description": "Se aplican controles de seguridad a los sistemas de back-end para minimizar accesos no autorizados. El proyecto OWASP ofrece ejemplos de controles de seguridad",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M3": {
+            "name": "Recuperación de Sistemas Backend Esenciales",
+            "description": "Se aplican controles de seguridad a los sistemas de back-end. Cuando los servidores back-end son esenciales para la prestación de los servicios, existen medidas de recuperación en caso de interrupción del sistema. El proyecto OWASP ofrece ejemplos de controles de seguridad",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "M4": {
+            "name": "Seguridad en Computación en la Nube",
+            "description": "Se aplican controles de seguridad para minimizar los riesgos asociados a la computación en la nube. En el proyecto OWASP y en las orientaciones sobre computación en la nube del Centro de Ciberseguridad Nacional (NCSC) pueden encontrarse ejemplos de controles de seguridad",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "M5": {
+            "name": "Protección contra Violaciones de Datos",
+            "description": "Se aplican controles de seguridad a los sistemas de back-end para evitar violaciones de la seguridad de los datos. El proyecto OWASP ofrece ejemplos de controles de seguridad",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "M6": {
+            "name": "Seguridad desde el Diseño",
+            "description": "Los sistemas incorporarán seguridad desde el diseño para minimizar riesgos",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M7": {
+            "name": "Control de Acceso Integral",
+            "description": "Se aplicarán diseños y técnicas de control de acceso para proteger los datos y el código del sistema",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "M8": {
+            "name": "Protección de Datos Personales y Críticos",
+            "description": "Mediante el diseño del sistema y el control de acceso, no debe ser posible que el personal no autorizado acceda a datos personales o a los datos críticos del sistema. El Proyecto de seguridad de aplicaciones web abiertas (OWASP) ofrece ejemplos de controles de seguridad",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M9": {
+            "name": "Prevención y Detección de Intrusiones",
+            "description": "Se emplearán medidas para prevenir y detectar accesos no autorizados",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M10": {
+            "name": "Autenticación de Mensajes Vehiculares",
+            "description": "El vehículo verificará la autenticidad e integridad de los mensajes que recibe",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": true
+            }
+        },
+        "M11": {
+            "name": "Gestión Segura de Claves Criptográficas",
+            "description": "Se implantarán controles de seguridad para almacenar claves criptográficas (p. ej., uso de módulos de seguridad de hardware)",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M12": {
+            "name": "Protección de Datos en Tránsito",
+            "description": "Se protegerán los datos confidenciales transmitidos al vehículo o desde este",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": false,
+                "availability": false,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "M13": {
+            "name": "Mitigación de Ataques DoS",
+            "description": "Se emplearán medidas para la detección y recuperación de un ataque de denegación de servicio",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": false,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "M14": {
+            "name": "Protección Antimalware",
+            "description": "Deben considerarse medidas para proteger los sistemas frente a virus o software malicioso integrados",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        },
+        "M15": {
+            "name": "Detección de Actividades Maliciosas Internas",
+            "description": "Deben considerarse medidas para detectar actividad o mensajes internos maliciosos",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M16": {
+            "name": "Actualización Segura de Software",
+            "description": "Se emplearán procedimientos seguros de actualización del software",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M18": {
+            "name": "Privilegios Mínimos de Acceso",
+            "description": "Se aplicarán medidas para definir y controlar las funciones de usuario y los privilegios de acceso, sobre la base del principio del mínimo privilegio de acceso",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M19": {
+            "name": "Registro y Auditoría de Actividades",
+            "description": "Las organizaciones garantizarán la definición y el cumplimiento de los procedimientos de seguridad, incluido el registro de actividades y el acceso relacionados con la gestión de las funciones de seguridad",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": false,
+                "traceability": true
+            }
+        },
+        "M20": {
+            "name": "Seguridad en Acceso Remoto",
+            "description": "Se aplicarán controles de seguridad a los sistemas que tienen acceso remoto",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M21": {
+            "name": "Validación de Software de Terceros",
+            "description": "Se evaluará la seguridad del software, se autentificará y se protegerá su integridad. Se aplicarán controles de seguridad para minimizar el riesgo procedente del software de terceros que está destinado a ser alojado en el vehículo o es susceptible de ser alojado en el vehículo",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": false,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M22": {
+            "name": "Seguridad en Interfaces Externas",
+            "description": "Se aplicarán controles de seguridad a las interfaces externas",
+            "cidat": {
+                "confidentiality": false,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M23": {
+            "name": "Mejores Prácticas de Desarrollo",
+            "description": "Se seguirán las mejores prácticas de ciberseguridad en el desarrollo de software y hardware",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": true,
+                "traceability": false
+            }
+        },
+        "M24": {
+            "name": "Protección de Datos Personales",
+            "description": "Para el almacenamiento de datos personales se seguirán las mejores prácticas para la protección de la integridad y la confidencialidad de los datos",
+            "cidat": {
+                "confidentiality": true,
+                "integrity": true,
+                "availability": true,
+                "authenticity": false,
+                "traceability": false
+            }
+        }
+    },
+    "threat_types": {
+        "1": {
+            "name": "Ataque desde servidores back-end",
+            "description": "Servidores back-end utilizados como medio para atacar un vehículo o extraer datos"
+        },
+        "2": {
+            "name": "Interrupción de servidores",
+            "description": "Interrupción de los servicios del servidor back-end, lo que afecta al funcionamiento de un vehículo"
+        },
+        "3": {
+            "name": "Compromiso de datos almacenados",
+            "description": "Los datos relacionados con el vehículo que se almacenan en los servidores back-end se pierden o se ven comprometidos (\"violación de la seguridad de los datos\")"
+        },
+        "4": {
+            "name": "Falsificación de mensajes",
+            "description": "Falsificación de los mensajes o datos recibidos por el vehículo"
+        },
+        "5": {
+            "name": "Manipulación por canales de comunicación",
+            "description": "Canales de comunicación utilizados para llevar a cabo una manipulación, eliminación u otras modificaciones no autorizadas del código o los datos almacenados por el vehículo"
+        },
+        "6": {
+            "name": "Vulnerabilidad en canales de comunicación",
+            "description": "Los canales de comunicación permiten aceptar mensajes poco fiables o que no son de confianza o son vulnerables a secuestro de sesión o ataques de repetición"
+        },
+        "7": {
+            "name": "Divulgación no autorizada de información",
+            "description": "La información puede divulgarse fácilmente. Por ejemplo, mediante la interceptación de las comunicaciones o permitiendo el acceso no autorizado a archivos o carpetas confidenciales"
+        },
+        "8": {
+            "name": "Denegación de servicio",
+            "description": "Ataques de denegación de servicio a través de canales de comunicación para alterar las funciones del vehículo"
+        },
+        "9": {
+            "name": "Elevación de privilegios",
+            "description": "Un usuario sin privilegios puede obtener acceso privilegiado a los sistemas del vehículo"
+        },
+        "10": {
+            "name": "Infección por virus",
+            "description": "Los virus integrados en los medios de comunicación pueden infectar los sistemas del vehículo"
+        },
+        "11": {
+            "name": "Mensajes con contenido malicioso",
+            "description": "Los mensajes recibidos por el vehículo (por ejemplo, mensajes X2V o mensajes de diagnóstico) o transmitidos en él contienen contenido malicioso"
+        },
+        "12": {
+            "name": "Compromiso de actualizaciones",
+            "description": "Uso incorrecto o compromiso de los procedimientos de actualización"
+        },
+        "13": {
+            "name": "Bloqueo de actualizaciones",
+            "description": "Es posible denegar actualizaciones legítimas"
+        },
+        "15": {
+            "name": "Facilitación involuntaria",
+            "description": "Actores legítimos pueden actuar de forma que se facilita involuntariamente un ciberataque"
+        },
+        "16": {
+            "name": "Manipulación de conectividad",
+            "description": "La manipulación de la conectividad de las funciones del vehículo permite un ciberataque que puede incluir los sistemas telemáticos; los sistemas que permiten operaciones remotas; y los sistemas que utilizan comunicaciones inalámbricas de corto alcance"
+        },
+        "17": {
+            "name": "Software de terceros malicioso",
+            "description": "Software alojado por terceros, p. ej., aplicaciones de entretenimiento utilizadas como medio para atacar los sistemas de vehículo"
+        },
+        "18": {
+            "name": "Ataque por interfaces externas",
+            "description": "Dispositivos conectados a interfaces externas, p. ej., puertos USB, puerto OBD, utilizados como medio para atacar los sistemas del vehículo"
+        },
+        "19": {
+            "name": "Extracción no autorizada",
+            "description": "Extracción de los datos o el código del vehículo"
+        },
+        "20": {
+            "name": "Manipulación de datos o código",
+            "description": "Manipulación de los datos o el código del vehículo"
+        },
+        "21": {
+            "name": "Eliminación de datos o código",
+            "description": "Borrado de datos o de código"
+        },
+        "22": {
+            "name": "Introducción de malware",
+            "description": "Introducción de software malicioso"
+        },
+        "23": {
+            "name": "Sobrescritura de software",
+            "description": "Introducción de software nuevo o sobreescritura de software ya existente"
+        },
+        "24": {
+            "name": "Alteración de sistemas",
+            "description": "Alteración de sistemas u operaciones"
+        },
+        "25": {
+            "name": "Manipulación de parámetros",
+            "description": "Manipulación de los parámetros del vehículo"
+        },
+        "26": {
+            "name": "Compromiso criptográfico",
+            "description": "Las tecnologías criptográficas pueden verse comprometidas o no se aplican lo suficiente"
+        },
+        "27": {
+            "name": "Componentes comprometidos",
+            "description": "Las piezas o los suministros podrían verse comprometidos y permitir el ataque de los vehículos"
+        },
+        "28": {
+            "name": "Vulnerabilidades de desarrollo",
+            "description": "El desarrollo de software o hardware permite vulnerabilidades"
+        },
+        "29": {
+            "name": "Vulnerabilidades de red",
+            "description": "El diseño de la red introduce vulnerabilidades"
+        },
+        "30": {
+            "name": "Pérdida física de datos",
+            "description": "Amenazas para la \"pérdida física de datos\""
+        },
+        "31": {
+            "name": "Transmisión no autorizada",
+            "description": "Puede producirse una transmisión de datos no deseada"
+        },
+        "32": {
+            "name": "Manipulación física",
+            "description": "La manipulación física de los sistemas puede posibilitar un ataque"
+        }
+    }
+}
